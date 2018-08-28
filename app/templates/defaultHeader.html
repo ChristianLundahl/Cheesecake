@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>{{:title}}</title>
+		<base href="/{{:baseHref}}">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,600|Unica+One&amp;subset=latin-ext"
+			  rel="stylesheet">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		{{:stylesheets}}
+		<script type="text/javascript">
+			$(window).on('load', function () {
+				var imagesPath = '{{:imagesPath}}';
+				$.each($('img'), function () {
+					srcUrl = $(this).attr('src')
+					if (srcUrl.indexOf('//') == -1) {
+						//this.src = imagesPath + srcUrl;
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="mainGrid">
+			<div id="upper" class="gridItem gridHeader">
+				<div id="upperText">
+					<span id="topHeader">stuff by christian lundahl</span> slightly less boring default
+				</div>
+			</div>
+			<div class="gridItem leftMenu sideMenu">
+				<div class="sub">
+					<a href="Home"><h1>home</h1></a>
+					<div class="leftSubMenu sideSubMenu">
+						<a href="Home/AboutMe">About me</a>
+					</div>
+					<a href="Programming"><h1>programming</h1></a>
+					<div class="leftSubMenu sideSubMenu">
+						<a href="Programming/PhpProjects">PHP Projects</a><br/>
+						<a href="Programming/PhpClassesAndSnippets">PHP Classes &amp; Snippets</a><br/>
+						<a href="Programming/WindowsScripting">Windows Scripting</a><br/>
+						<a href="Programming/MsDosScripting">MS-DOS Scripting</a>
+					</div>
+					<a href="MusicProduction"><h1>music production</h1></a>
+					<div class="leftSubMenu sideSubMenu">
+						<a href="MusicProduction/TracksAndRemixes">Full Tracks &amp; Remixes</a><br/>
+						<a href="MusicProduction/SamplesAndSoundDesign">Samples &amp; Sound Design</a><br/>
+						<a href="MusicProduction/TechniquesAndTutorials">Techniques &amp; Tutorials</a>
+					</div>
+					<a href="RetroComputing"><h1>retro computing</h1></a>
+					<div class="leftSubMenu sideSubMenu">
+						<a href="RetroComputing/MyHardware">My Hardware</a><br/>
+						<a href="RetroComputing/Videos">Videos</a><br/>
+						<a href="RetroComputing/Pickups">Pickups</a>
+					</div>
+					<a href="Photography"><h1>photography</h1></a>
+					<div class="leftSubMenu sideSubMenu">
+						<a href="Photography/Index">Index</a><br/>
+						<a href="Photography/Tags/HDR">Tag: HDR</a><br/>
+						<a href="Photography/Tags/Technology">Tag: Technology</a><br/>
+						<a href="Photography/Tags/Nature">Tag: Nature</a><br/>
+						<a href="Photography/Tags/People">Tag: People</a>
+					</div>
+				</div>
+			</div>
+			<div class="gridItem">
+				<div class="mainContent">

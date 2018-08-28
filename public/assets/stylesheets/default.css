@@ -1,0 +1,119 @@
+html, body {
+	margin  : 0;
+	padding : 0;
+	height  : 100%;
+}
+
+body {
+	background             : radial-gradient(circle, #5e5e5e, #2b2b2b) #2b2b2b;
+	color                  : #c9c9c9;
+	font-family            : 'Montserrat';
+	font-weight            : 300;
+	-webkit-font-smoothing : antialiased;
+}
+
+h1 {
+	font             : 1.8em 'Unica One';
+	margin           : 0 0 .25em 0;
+	padding          : 0 .5em 0 .5em;
+	background-color : rgba(0, 0, 0, .1);
+	border-bottom    : 2px solid rgba(255, 255, 255, .2);
+	letter-spacing   : 0;
+}
+
+h1:not(:first-child) {
+	margin : 1em 0 .25em 0;
+}
+
+a {
+	color : inherit;
+}
+
+a:hover {
+	color : #cf0;
+}
+
+#upper {
+	grid-column-start : 1;
+	grid-column-end   : 4;
+	background-color  : rgba(0, 0, 0, .33);
+	border-top        : 0.125em solid #cf0;
+	padding           : .33em;
+	font              : 1.8em 'Unica One';
+}
+
+#upper #upperText {
+	vertical-align : middle;
+}
+
+#upper #upperText #topHeader {
+	color : #cf0;
+}
+
+#mainGrid {
+	display               : grid;
+	height                : 100%;
+	left                  : 0;
+	right                 : 0;
+	top                   : 0;
+	bottom                : 0;
+	margin                : 0;
+	grid-template-rows    : max-content auto;
+	grid-template-columns : 20em auto 20em;
+	grid-gap              : 1em;
+}
+
+#mainGrid .gridItem {
+	line-height : 1.5em;
+}
+
+#mainGrid .sideMenu .sub {
+	padding          : 1em;
+	background-color : rgba(0, 0, 0, .33);
+}
+
+#mainGrid .leftMenu {
+	text-align : right;
+	padding    : 0 0 0 1em;
+}
+
+#mainGrid .rightMenu {
+	padding : 0 1em 0 0;
+}
+
+#mainGrid > .sideMenu > .sub > .sideSubMenu a {
+	text-decoration : none;
+	display         : inline-block;
+	width           : 100%;
+	letter-spacing  : .05em;
+}
+
+#mainGrid > .sideMenu > .sub a {
+	text-decoration : none;
+	letter-spacing  : 0;
+}
+
+#mainGrid .sideMenu a:hover {
+	text-decoration : none;
+}
+
+#mainGrid > .sideMenu > .sideSubMenu {
+	margin : 0 .5em 1em .5em;
+}
+
+#mainGrid .gridItem .mainContent {
+	/*overflow-y : scroll;*/
+	/*padding-right: 1em;*/
+}
+
+#mainGrid > .gridItem > .mainContent > .contentBox {
+	padding          : 1em;
+	background-color : rgba(0, 0, 0, .33);
+	margin           : 0 0 1em 0;
+	letter-spacing   : .05em;
+}
+
+.errorMessage {
+	font: .9em monospace;
+	padding: .33em;
+}
